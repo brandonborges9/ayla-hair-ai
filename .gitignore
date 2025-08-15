@@ -1,0 +1,21 @@
+# Environnements & caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+.DS_Store
+
+# Logs / builds
+*.log
+dist/
+build/
+*.egg-info/
+
+# Données locales
+data/raw/
+data/tmp/
+.env
