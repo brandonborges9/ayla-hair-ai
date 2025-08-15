@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pillow
+opencv-python
+torch        # ou tensorflow
+sqlalchemy
+databases    # si tu veux un accès asynchrone
+python-multipart  # pour l’upload d’images via FastAPI
+torchvision
+
