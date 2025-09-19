@@ -1,22 +1,37 @@
-# Environnements & caches
-.venv/
-venv/
+# --- Ignore tout par défaut ---
+*
+
+# --- Mais garde le code et fichiers utiles ---
+!.gitignore
+!*.py
+!*.ipynb
+!requirements*.txt
+!Pipfile
+!Pipfile.lock
+!README.md
+!.env.example
+
+# --- Ignore data, sorties et caches ---
+app/data/*
+!app/data/__init__.py      # garde juste l'init pour le package
+outputs/
+notebooks/
 __pycache__/
-*.py[cod]
+*.log
+*.csv
+
+# --- Environnements virtuels ---
+.venv/
+env/
+venv/
+.conda/
+.DS_Store
+.idea/
+.vscode/
+
+# --- Fichiers compilés ---
+*.pyc
 *.pyo
 *.pyd
-*.so
-*.dylib
-.DS_Store
-
-# Logs / builds
-*.log
-dist/
-build/
-*.egg-info/
-
-# Données locales
-data/raw/
-data/tmp/
-.env
-.env
+.mypy_cache/
+.pytest_cache/
