@@ -35,3 +35,8 @@ venv/
 *.pyd
 .mypy_cache/
 .pytest_cache/
+.DS_Store
+.env
+app/.DS_Store
+app/__pycache__/main.cpython-39.pyc
+app/api/__pycache__/routes.cpython-39.pyc
